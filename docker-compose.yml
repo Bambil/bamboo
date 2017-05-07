@@ -12,7 +12,7 @@ services:
       CLUSTER_CONSUL_HOST: consul # must match consul service below
   influx:
     image: influxdb
-  cosul:
+  consul:
     ports:
       - "8500:8500"
     image: consul
