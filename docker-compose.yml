@@ -1,18 +1,22 @@
-version: "2"
+version: "3"
 services:
-  i1820:
-    image: i1820/core.js
+  bamboo-connectivity:
+    image: ibamboo/connectivity
     ports:
-      - "8080:8080"
+      - "1883:1883"
     environment:
-      MQTT_IP: 192.168.73.6
-      CLUSTER_NAME: parham-home
-      INFLUX_DATABASE: I1820
-      INFLUX_HOST: influx # must match influx service below
-      CLUSTER_CONSUL_HOST: consul # must match consul service below
+			BAMBOO_BROKER_PROCESSES: 2
+			BAMBOO_BROKER_PORT: 1883
+	bamboo-log:
+		image: ibamboo/log
+		ports:
+			- "8081:8081"
+		environment:
+			BAMBOO_DATABASE_NAME: Bamboo
+			BAMBOO_DATABASE_HOST: influx
+			BAMBOO_CONNECTIVITY_HOST: bamboo-connectivity
+			BAMBOO_CONNECTIVITY_PORT: 1883
+			BAMBOO_HTTP_HOST: 0.0.0.0
+			BAMBOO_HTTP_PORT: 8081
   influx:
     image: influxdb
-  consul:
-    ports:
-      - "8500:8500"
-    image: consul
