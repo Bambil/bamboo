@@ -1,5 +1,7 @@
 version: "3"
 services:
+  influx:
+    image: influxdb
   bamboo-connectivity:
     image: ibamboo/connectivity
     ports:
@@ -9,6 +11,8 @@ services:
       BAMBOO_BROKER_PORT: 1883
   bamboo-log:
     image: ibamboo/log
+    links:
+      - influx
     ports:
       - "8081:8081"
     environment:
@@ -18,5 +22,3 @@ services:
       BAMBOO_CONNECTIVITY_PORT: 1883
       BAMBOO_HTTP_HOST: 0.0.0.0
       BAMBOO_HTTP_PORT: 8081
-  influx:
-    image: influxdb
