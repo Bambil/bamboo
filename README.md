@@ -1,6 +1,7 @@
 # BamboO
 
 ![bamboo](https://img.shields.io/badge/bambil-bamboo-orange.svg?style=flat-square)
+[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 ## Introduction
 This is an IoT platform created with three goals in mind:
