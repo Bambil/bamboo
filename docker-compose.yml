@@ -13,8 +13,6 @@ services:
     image: ibamboo/log
     links:
       - influx
-    ports:
-      - "8081:8081"
     environment:
       BAMBOO_DATABASE_NAME: Bamboo
       BAMBOO_DATABASE_HOST: influx
@@ -22,3 +20,11 @@ services:
       BAMBOO_CONNECTIVITY_PORT: 1883
       BAMBOO_HTTP_HOST: 0.0.0.0
       BAMBOO_HTTP_PORT: 8081
+  bamboo-interface:
+    image: ibamboo/interface
+    ports:
+      - "8080:8080"
+    environment:
+      BAMBOO_HTTP_HOST: 0.0.0.0
+      BAMBOO_HTTP_PORT: 8080
+      BAMBOO_COMPONENTS_LOG: http://bamboo-log:8081
