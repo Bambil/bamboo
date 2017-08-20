@@ -40,3 +40,4 @@ As we mentioned earlier we want modularity so we created following components:
 * Log
 * Trap
 * Device Management (Based on Bamboolia Language)
+* Interface
