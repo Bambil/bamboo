@@ -2,6 +2,11 @@ version: "3"
 services:
   influx:
     image: influxdb
+  bamboo-winston:
+    image: ibamboo/winston
+    environment:
+      BAMBOO_WINSTOND_HOST: 0.0.0.0
+      BAMBOO_WINSTOND_PORT: 9003
   bamboo-connectivity:
     image: ibamboo/connectivity
     ports:
@@ -20,6 +25,8 @@ services:
       BAMBOO_CONNECTIVITY_PORT: 1883
       BAMBOO_HTTP_HOST: 0.0.0.0
       BAMBOO_HTTP_PORT: 8081
+      BAMBOO_WINSTOND_HOST: bamboo-winston
+      BAMBOO_WINSTOND_PORT: 9003
   bamboo-interface:
     image: ibamboo/interface
     ports:
