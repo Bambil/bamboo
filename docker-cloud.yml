@@ -1,7 +1,7 @@
 influx:
   image: influxdb
-  mongo:
-    image: mongo
+mongo:
+  image: mongo
 bamboo-winston:
   image: ibamboo/winston
   environment:
