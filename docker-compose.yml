@@ -2,6 +2,8 @@ version: "3"
 services:
   influx:
     image: influxdb
+  mongo:
+    image: mongo
   bamboo-winston:
     image: ibamboo/winston
     environment:
@@ -14,6 +16,16 @@ services:
     environment:
       BAMBOO_BROKER_PROCESSES: 2
       BAMBOO_BROKER_PORT: 1883
+  bamboolia:
+    image: ibamboo/bamboolia
+    links:
+      - mongo
+    environment:
+      BAMBOO_CONNECTIVITY_HOST: bamboo-connectivity
+      BAMBOO_CONNECTIVITY_PORT: 1883
+      BAMBOO_HTTP_HOST: 0.0.0.0
+      BAMBOO_HTTP_PORT: 8083
+      BAMBOO_MONGO_URL: mongodb://mongo/Bamboo
   bamboo-log:
     image: ibamboo/log
     links:
