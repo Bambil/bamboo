@@ -38,6 +38,7 @@ docker image.)
 sudo docker-compose up
 ```
 2. Using [docker cloud](http://cloud.docker.com/):
+
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 
