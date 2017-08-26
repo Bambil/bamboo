@@ -33,6 +33,8 @@ docker image.)
 3. Greater maintainability
 
 ## Getting started with Bamboo
+First of all you need to setup bamboo platform, you have two choice for that:
+
 1. Using [docker-compose](https://docs.docker.com/compose/):
 ```sh
 sudo docker-compose up
@@ -41,6 +43,7 @@ sudo docker-compose up
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
+After running bamboo platform you must run your favorite gateway (hub) in order to communicate with platorm.
 
 ## Components
 As we mentioned earlier we want modularity so we created following components:
