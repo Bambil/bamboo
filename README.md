@@ -1,7 +1,6 @@
 # BamboO
 
 ![bamboo](https://img.shields.io/badge/bambil-bamboo-orange.svg?style=flat-square)
-[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 ## Introduction
 This is an IoT platform created with three goals in mind:
@@ -32,6 +31,15 @@ From the benefits of this architecture we can point out following reasons:
 docker image.)
 2. Easier development.
 3. Greater maintainability
+
+## Getting started with Bamboo
+1. Using [docker-compose](https://docs.docker.com/compose/):
+```sh
+sudo docker-compose up
+```
+2. Using [docker cloud](http://cloud.docker.com/):
+[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
+
 
 ## Components
 As we mentioned earlier we want modularity so we created following components:
