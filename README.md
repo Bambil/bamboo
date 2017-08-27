@@ -46,12 +46,4 @@ sudo docker-compose up
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 After running bamboo platform you must run your favorite gateway (hub) in order to communicate with platorm.
-
-## Components
-As we mentioned earlier we want modularity so we created following components:
-
-* Connectivity
-* Log
-* Trap
-* Device Management (Based on Bamboolia Language)
-* Interface
+for more techninal informantion about Bamboo platform please refer to [bamboo-doc](https://bambil.github.io/bamboo-doc/).
