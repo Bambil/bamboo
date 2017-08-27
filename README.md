@@ -37,6 +37,8 @@ First of all you need to setup bamboo platform, you have two choice for that:
 
 1. Using [docker-compose](https://docs.docker.com/compose/):
 ```sh
+git clone https://github.com/bambil/bamboo
+cd bamboo
 sudo docker-compose up
 ```
 2. Using [docker cloud](http://cloud.docker.com/):
