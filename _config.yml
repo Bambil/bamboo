@@ -1,7 +1,7 @@
 # Site settings
-title: I1820
+title: Bamboo
 description: "Good Days, Good Things"
-repository: "I1820/I1820.github.io"
+repository: "bambil/bamboo"
 
 # Secondary Parameters
 header-img: img/header.jpg
@@ -9,8 +9,8 @@ headercolor: "#FFFFFF"
 logo: img/logo.png
 
 # Tertiary Parameters
-github_username: I1820
-project_repository: I1820.github.io
+github_username: bambil
+project_repository: bamboo
 
 # Build settings
 gems:
