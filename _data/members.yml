@@ -1,0 +1,24 @@
+- name: "Iman Tabrizian"
+  bio: "Founder of Bambil"
+  role: "Architectural Designer and Developer of Bamboo"
+  avatar: "https://github.com/Tabrizian.png"
+  url: "https://imantabrizian.me/"
+  socials:
+    github: "https://github.com/tabrizian"
+    twitter: "@_iman96_"
+
+- name: "Parham Alvani"
+  bio: "Co-Founder of Bambil and Nahal"
+  role: "Developer of Bamboo"
+  avatar: "https://github.com/1995parham.png"
+  url: "https://1995parham.github.io/"
+  socials:
+    github: "https://github.com/1995parham"
+
+- name: "Mohammad Hussein Tavakoli Bina"
+  bio: "Founder and CEO of Nahal"
+  role: "Reviwer of Bamboo Documentations"
+  avatar: "https://github.com/mhtb32.png"
+  url: "http://mhtb.ir/"
+  socials:
+    github: "https://github.com/mhtb32"
