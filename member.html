@@ -1,0 +1,36 @@
+---
+layout: page
+title: "Members"
+description: "Collaborators working on this project."
+---
+<hr>
+
+{% for member in site.data.members %}
+<div class="row">
+  <div class="col-md-4">
+    <img src="{{ member.avatar }}" alt="{{member.name}} avatar" class="img-thumbnail">
+  </div>
+  <div class="col-md-8">
+    <h1>{{ member.name }}</h1>
+    <h2>{{ member.role }}</h2>
+
+    {% for social in member.socials %}
+    <a href="{{social[1]}}"><i class="fa fa-{{social[0]}}" aria-hidden="true"></i></a>
+    {% endfor %}
+    {% if member.url %}
+    <a href="{{member.url}}"><i class="fa fa-user" aria-hidden="true"></i></a>
+    {% endif %}
+
+    <br>
+
+    {% if member.bio %}
+    {{ member.bio }}
+    {% endif %}
+
+    <br>
+
+    {{ member.timeline }}
+  </div>
+</div>
+<hr>
+{% endfor %}
