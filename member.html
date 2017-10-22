@@ -29,7 +29,9 @@ description: "Collaborators working on this project."
 
     <br>
 
-    {{ member.timeline }}
+    {% if member.socials.github %}
+      <a class="github-button" href="{{member.socials.github}}" aria-label="Follow {{member.name}} on GitHub">Follow {{member.name}}</a>
+    {% endif %}
   </div>
 </div>
 <hr>
