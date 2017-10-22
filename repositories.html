@@ -3,11 +3,16 @@ layout: page
 title: "Repositories"
 description: "Bamboo services repositories"
 ---
-<p>
-The Bamboo is an IoT platform created with three goals in mind:
-<ul>
-  <li>Performance</li>
-  <li>Scalability</li>
-  <li>Modularity</li>
-</ul>
-</p>
+<hr>
+
+{% for repository in site.data.repositories %}
+<div class="row">
+  <div class="col-md-12">
+    <h2>{{ repository.name }}</h2>
+
+    <a class="github-button" href="https://github.com/bambil/{{repository.github}}" data-icon="octicon-star" data-show-count="true" aria-label="Star bambil/{{repository.github}} on GitHub">Star</a>
+    <a class="github-button" href="https://github.com/bambil/{{repository.github}}" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork bambil/{{repository.github}} on GitHub">Fork</a>
+  </div>
+</div>
+<hr>
+{% endfor %}
