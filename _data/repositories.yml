@@ -1,0 +1,10 @@
+- name: Connectivity
+  github: bamboo-connectivity
+- name: Log
+  github: bamboo-log
+- name: Trap
+  github: bamboo-trap
+- name: Bamboolia
+  github: bamboolia
+- name: Component
+  github: bamboo-component
