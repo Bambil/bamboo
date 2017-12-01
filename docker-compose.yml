@@ -20,7 +20,7 @@ services:
     image: ibamboo/bamboolia
     links:
       - mongo
-			- bamboo-connectivity
+      - bamboo-connectivity
     environment:
       BAMBOO_CONNECTIVITY_HOST: bamboo-connectivity
       BAMBOO_CONNECTIVITY_PORT: 1883
@@ -31,8 +31,8 @@ services:
     image: ibamboo/log
     links:
       - influx
-			- bamboo-winston
-			- bamboo-connectivity
+      - bamboo-winston
+      - bamboo-connectivity
     environment:
       BAMBOO_DATABASE_NAME: Bamboo
       BAMBOO_DATABASE_HOST: influx
