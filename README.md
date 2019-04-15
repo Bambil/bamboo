@@ -48,3 +48,11 @@ docker-compose up
 
 After running bamboo platform you must run your favorite gateway (hub) in order to communicate with platform.
 For more technical information about Bamboo platform please refer to [bamboo-doc](https://bambil.github.io/bamboo-doc/).
+
+## Why we wrote it?
+
+At 2017 when we decided to re-write [mia](https://github.com/I1820/mia) to handle more load and making it a commercial project
+Iman suggested that we can use NodeJS for this and Bamboo was born. At the same time I was writing
+my thesis for B.Sc., so I decided to change its subject to having NodeJS-based IoT Platform.
+
+At the end this project presented as my thesis and then deprecated in favor of [I1820](https://github.com/I1820/I1820).
